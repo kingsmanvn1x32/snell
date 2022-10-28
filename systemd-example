@@ -1,0 +1,12 @@
+[Unit]
+Description=Snell Proxy Service
+After=network.target
+
+[Service]
+Restart=always
+Type=simple
+LimitNOFILE=32768
+ExecStart=/usr/local/bin/snell-server -c /etc/snell/snell-server.conf
+
+[Install]
+WantedBy=multi-user.target

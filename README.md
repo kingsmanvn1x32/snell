@@ -31,7 +31,7 @@ chmod +x install-snell.sh
 ./install-snell.sh
 ```
 
-## The default end slogan 443 was installed for the first time, please modify it Run after all scripts are run
+## The default end slogan `443` and psk `kingsmanvn` was installed for the first time, please modify it Run after all scripts are run
 ```
 vi /etc/snell/snell-server.conf
 systemctl restart snell
@@ -50,9 +50,9 @@ chmod +x uninstall-snell.sh
 ```
 
 ## Add a proxy line in Surge  (The latest beta version is required):
-`Proxy = snell, [SERVER ADDRESS], 443, psk=kingsmanvn, obfs=tls`
-
-## Change the value of `psk` in [`install-snell.sh`](./install-snell.sh)
+```
+Proxy = snell, [SERVER ADDRESS], 443, psk=kingsmanvn, obfs=tls
+```
 
 ## Opens Source
 

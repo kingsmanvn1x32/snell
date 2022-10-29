@@ -13,19 +13,43 @@ An encrypted proxy service program
 * The server-side program is able to auto-negotiate cipher and version with clients.
 * Protocol is ready for multiple users ACL. (No implementation yet)
 
-## Auto install on Ubuntu (use systemd for autostart)
+## Please use root users to run
 
-1. Run on terminal
+## Auto install (use systemd for autostart)
+
+1. Debian & Ubuntu users please run
 ```
 wget https://github.com/Kingsmanvn-Official/snell/raw/master/install-snell.sh
+chmod +x install-snell.sh
 ./install-snell.sh
 ```
 
-2. Wait install.
+2. Centos & RedHat users please run
+```
+wget --no-check-certificate -O snell.sh https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.centos.sh
+chmod +x install-snell.sh
+./install-snell.sh
+```
 
-3. Done on server.
+## The default end slogan 443 was installed for the first time, please modify it Run after all scripts are run
+```
+vi /etc/snell/snell-server.conf
+systemctl restart snell
+```
 
-4. Add a proxy line in Surge  (The latest beta version is required):
+## View the running status：
+```
+systemctl status snell
+```
+
+## Unloading method：
+```
+wget --no-check-certificate -O uninstall-snell.sh https://raw.githubusercontent.com/primovist/snell.sh/master/uninstall-snell.sh
+chmod +x uninstall-snell.sh
+./uninstall-snell.sh
+```
+
+## Add a proxy line in Surge  (The latest beta version is required):
     * `Proxy = snell, [SERVER ADDRESS], 443, psk=kingsmanvn, obfs=tls`
 
 ## Change the value of `psk` in [`install-snell.sh`](./install-snell.sh)

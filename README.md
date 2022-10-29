@@ -33,7 +33,7 @@ chmod +x install-snell.sh
 
 ## The default end slogan `443` and psk `kingsmanvn` was installed for the first time, please modify it Run after all scripts are run
 ```
-vi /etc/snell/snell-server.conf
+nano /etc/snell/snell-server.conf
 systemctl restart snell
 ```
 
@@ -53,7 +53,3 @@ chmod +x uninstall-snell.sh
 ```
 Proxy = snell, [SERVER ADDRESS], 443, psk=kingsmanvn, obfs=tls
 ```
-
-## Opens Source
-
-We haven't decided whether to open source the project for complicated reasons.

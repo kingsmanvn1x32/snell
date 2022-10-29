@@ -50,7 +50,7 @@ chmod +x uninstall-snell.sh
 ```
 
 ## Add a proxy line in Surge  (The latest beta version is required):
-    `Proxy = snell, [SERVER ADDRESS], 443, psk=kingsmanvn, obfs=tls`
+`Proxy = snell, [SERVER ADDRESS], 443, psk=kingsmanvn, obfs=tls`
 
 ## Change the value of `psk` in [`install-snell.sh`](./install-snell.sh)
 

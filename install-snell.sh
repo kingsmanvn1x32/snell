@@ -6,7 +6,7 @@ SYSTEMD_LIB="/lib/systemd/system/snell.service"
 SYSTEMD_ETC="/etc/systemd/system/snell.service"
 apt install unzip && apt install tmux -y
 cd ~/
-wget --no-check-certificate -O snell.zip https://github.com/Kingsmanvn-Official/releases/download/v3.0.1/snell-server-v3.0.1-linux-amd64.zip
+wget --no-check-certificate -O snell.zip https://github.com/Kingsmanvn-Official/snell/releases/download/v3.0.1/snell-server-v3.0.1-linux-amd64.zip
 unzip -o snell.zip
 rm -f snell.zip
 chmod +x snell-server

@@ -26,7 +26,7 @@ chmod +x install-snell.sh
 
 2. Centos & RedHat users please run
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.centos.sh
+wget --no-check-certificate -O install-snell.sh https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.centos.sh
 chmod +x install-snell.sh
 ./install-snell.sh
 ```

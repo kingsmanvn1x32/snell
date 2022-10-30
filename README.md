@@ -19,14 +19,14 @@ An encrypted proxy service program
 
 1. Debian & Ubuntu users please run
 ```
-wget --no-check-certificate -O snell.sh https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.sh
+wget --no-check-certificate https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.sh
 chmod +x install-snell.sh
 ./install-snell.sh
 ```
 
 2. Centos & RedHat users please run
 ```
-wget --no-check-certificate -O snell.sh https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.centos.sh
+wget --no-check-certificate https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.centos.sh
 chmod +x install-snell.sh
 ./install-snell.sh
 ```

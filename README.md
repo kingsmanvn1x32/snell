@@ -19,7 +19,7 @@ An encrypted proxy service program
 
 1. Debian & Ubuntu users please run
 ```
-wget https://github.com/Kingsmanvn-Official/snell/raw/master/install-snell.sh
+wget --no-check-certificate -O snell.sh https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.sh
 chmod +x install-snell.sh
 ./install-snell.sh
 ```

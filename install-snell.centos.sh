@@ -4,7 +4,7 @@ export PATH
 CONF="/etc/snell/snell-server.conf"
 SYSTEMD_LIB="/lib/systemd/system/snell.service"
 SYSTEMD_ETC="/etc/systemd/system/snell.service"
-yum install unzip && yum install tmux -y
+yum update && yum upgrade && yum install unzip && yum install tmux -y
 cd ~/
 wget --no-check-certificate -O snell.zip https://github.com/Kingsmanvn-Official/snell/releases/download/v3.0.1/snell-server-v3.0.1-linux-amd64.zip
 unzip -o snell.zip

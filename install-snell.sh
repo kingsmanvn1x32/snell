@@ -61,19 +61,7 @@ if [ -f ${SYSTEMD_LIB} ]; then
     systemctl status snell.service
 else
     echo "Generating new service..."
-    echo "[Unit]" >>${SYSTEMD_LIB}
-    echo "Description=Snell Proxy Service" >>${SYSTEMD_LIB}
-    echo "After=network.target" >>${SYSTEMD_LIB}
-    echo "" >>${SYSTEMD_LIB}
-    echo "[Service]" >>${SYSTEMD_LIB}
-    echo "Restart=always" >>${SYSTEMD_LIB}
-    echo "Type=simple" >>${SYSTEMD_LIB}
-    echo "LimitNOFILE=32768" >>${SYSTEMD_LIB}
-    echo "ExecStart=/usr/local/bin/snell-server -c /etc/snell/snell-server.conf" >>${SYSTEMD_LIB}
-    echo "" >>${SYSTEMD_LIB}
-    echo "[Install]" >>${SYSTEMD_LIB}
-    echo "WantedBy=multi-user.target" >>${SYSTEMD_LIB}
-    echo "" >>${SYSTEMD_LIB}
+    cp -prf ${SYSTEMD_ETC} ${SYSTEMD_LIB}
     systemctl daemon-reload
     systemctl enable snell.service
     systemctl start snell.service

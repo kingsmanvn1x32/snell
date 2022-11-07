@@ -22,6 +22,7 @@ An encrypted proxy service program
 wget --no-check-certificate https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.sh
 chmod +x install-snell.sh
 ./install-snell.sh
+
 ```
 
 2. Centos & RedHat users please run
@@ -29,17 +30,20 @@ chmod +x install-snell.sh
 wget --no-check-certificate -O install-snell.sh https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.centos.sh
 chmod +x install-snell.sh
 ./install-snell.sh
+
 ```
 
 ## The default end slogan `443` and psk `kingsmanvn` was installed for the first time, please modify it Run after all scripts are run
 ```
 nano /etc/snell/snell-server.conf
 systemctl restart snell
+
 ```
 
 ## View the running status：
 ```
 systemctl status snell
+
 ```
 
 ## Unloading method：
@@ -47,6 +51,7 @@ systemctl status snell
 wget --no-check-certificate -O uninstall-snell.sh https://raw.githubusercontent.com/primovist/snell.sh/master/uninstall-snell.sh
 chmod +x uninstall-snell.sh
 ./uninstall-snell.sh
+
 ```
 
 ## Add a proxy line in Surge  (The latest beta version is required):

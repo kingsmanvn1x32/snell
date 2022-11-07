@@ -57,13 +57,13 @@ if [ -f ${SYSTEMD_LIB} ]; then
     echo "Found existing service..."
     systemctl daemon-reload
     systemctl enable
-    systemctl start snell.service
+    systemctl restart snell.service
     systemctl status snell.service
 else
     echo "Generating new service..."
     cp -prf ${SYSTEMD_ETC} ${SYSTEMD_LIB}
     systemctl daemon-reload
     systemctl enable snell.service
-    systemctl start snell.service
+    systemctl restart snell.service
     systemctl status snell.service
 fi

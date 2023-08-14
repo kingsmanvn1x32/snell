@@ -19,7 +19,7 @@ An encrypted proxy service program
 
 1. Debian & Ubuntu users please run
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.sh
+wget --no-check-certificate https://raw.githubusercontent.com/kingsmanvn1112/snell/master/install-snell.sh
 chmod +x install-snell.sh
 ./install-snell.sh
 
@@ -27,7 +27,7 @@ chmod +x install-snell.sh
 
 2. Centos & RedHat users please run
 ```
-wget --no-check-certificate -O install-snell.sh https://raw.githubusercontent.com/Kingsmanvn-Official/snell/master/install-snell.centos.sh
+wget --no-check-certificate -O install-snell.sh https://raw.githubusercontent.com/kingsmanvn1112/snell/master/install-snell.centos.sh
 chmod +x install-snell.sh
 ./install-snell.sh
 
@@ -48,7 +48,7 @@ systemctl status snell
 
 ## Unloading method：
 ```
-wget --no-check-certificate -O uninstall-snell.sh https://raw.githubusercontent.com/primovist/snell.sh/master/uninstall-snell.sh
+wget --no-check-certificate -O uninstall-snell.sh https://raw.githubusercontent.com/kingsmanvn1112/snell/master/uninstall-snell.sh
 chmod +x uninstall-snell.sh
 ./uninstall-snell.sh
 
